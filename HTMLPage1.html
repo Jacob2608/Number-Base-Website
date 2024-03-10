@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <title>Number Bases</title>
     <link rel="stylesheet" href="StyleSheet1.css">
-    <script src="Script1.js"></script>
 </head>
 <body>
     <header>
@@ -19,8 +18,7 @@
     </header>
 
     <div>
-        <p> Number bases are systems by which quantities can be expressed by a set of numerals with values dependent on their position in the number. Base-10 (AKA decimal) is the number base that we use every day and that we all think in. It uses the digits 0 - 9 and the positions have values in increasing powers of 10. <br> ⠀ </p> 
-        <p> Here is an example of how decimal works for the number 4823: <br> ⠀ </p>
+        <p> Number bases are systems by which quantities can be expressed by a set of numerals with values dependent on their position in the number. Base-10 (AKA decimal) is the number base that we use every day and that we all think in. It uses the digits 0 - 9 and the positions have values in increasing powers of 10. <br> Here is an example of how decimal works for the number 4823: <br> ⠀ </p> 
 
         <table>
             <tr>
@@ -46,11 +44,46 @@
             </tr>
         </table>
 
-        <p> <br> Each digit has a value equal to its value x 10<sup>position</sup>.</p>
-        <p> This can be generalised to base-n by saying that each digit will have the value of the digit’s value x n<sup>position</sup>. Base-n will have n unique numerals. <br> ⠀ </p>
+        <p> <br> Each digit has a value equal to its value x 10<sup>position</sup>. This can be generalised to base-n by saying that each digit will have the value of the digit’s value x n<sup>position</sup>. Base-n will have n unique numerals. <br> ⠀ </p>
 
         <h1 id="binary"> Binary </h1>
-        <p> <br /> This is where I will write information about binary. Filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words <br />⠀ </p>
+
+        <p> <br> Binary is base-2. It uses 2 numerals, 1 and 0, and the positions have values in increasing powers of 2. If there is a 1 in a certain position in the binary number, then that position’s value is added to the number total, and if there is a 0 it is not. <br> Here is an example for the binary number 11010: <br> ⠀ </p>
+        
+        <table>
+            <tr>
+                <td><b>Position⠀</b></td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Digit</b></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Value</b></td>
+                <td>16⠀</td>
+                <td>8⠀</td>
+                <td>0⠀</td>
+                <td>2⠀</td>
+                <td>0⠀</td>
+            </tr>
+        </table>
+
+        <p> <br> Therefore the binary number 11010 is 26 in decimal (16 + 8 + 2). <br><br> Use the calculator below to convert numbers from decimal to binary: </p>
+
+        <form action="">
+            <input type="text" id="binaryNumber" placeholder="Number">
+            <input type="button" value="Convert" id="binaryBtn">
+        </form>
+        <p id="binaryOutput"> Output </p>
 
         <h1 id="hexadecimal"> Hexadecimal </h1>
         <p> <br /> This is where I will write information about hexadecimal. Filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words filler words <br />⠀ </p>
@@ -60,5 +93,6 @@
 
     </div>
 
+    <script src="Script1.js"></script>
 </body>
 </html>
