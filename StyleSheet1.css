@@ -5,7 +5,7 @@
 }
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p, table{
@@ -15,6 +15,7 @@ p, table{
 
 body {
     min-height: 200vh;
+    background-color: gray;
 }
 
 header {
@@ -53,6 +54,7 @@ header ul li a{
     font-weight: 500;
     transition: 0.1s;
     color: #083c5d;
+    background-color: #328cc1;
 }
 
 div {
@@ -61,6 +63,16 @@ div {
     padding-left: 40px;
     padding-right: 40px;
     width: 85%;
-    background-color: gray;
+    background-color: white;
     margin: auto;
+}
+
+input{
+    border-radius: 25px;
+    border: 0px;
+    background-color: #328cc1;
+    padding: 20px;
+    width: 15%;
+    height: 1em;
+    color: black;
 }
