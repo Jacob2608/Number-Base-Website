@@ -6,7 +6,7 @@ function binary(){
 
     //validates input
     if(isNaN(parseInt(numberD)) || numberD % 1 != 0 || numberD < 0){
-        document.getElementById('binaryOutput').innerHTML = 'Input a positive integer.';
+        document.getElementById('binaryOutput').innerText = 'Input a positive integer.';
         return;
     }
 
@@ -30,7 +30,7 @@ function binary(){
     }
 
     //output
-    document.getElementById('binaryOutput').innerHTML = numberB;
+    document.getElementById('binaryOutput').innerText = numberB;
 }
 
 function hexadecimal(){
@@ -38,7 +38,7 @@ function hexadecimal(){
 
     //validates input
     if(isNaN(parseInt(numberD)) || numberD % 1 != 0 || numberD < 0){
-        document.getElementById('hexOutput').innerHTML = 'Input a positive integer.';
+        document.getElementById('hexOutput').innerText = 'Input a positive integer.';
         return;
     }
 
@@ -62,7 +62,7 @@ function hexadecimal(){
     }
 
     //output
-    document.getElementById('hexOutput').innerHTML = numberH;
+    document.getElementById('hexOutput').innerText = numberH;
 }
 
 binaryNumber.addEventListener('input', binary);
