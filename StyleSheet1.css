@@ -1,76 +1,110 @@
-﻿* {
+﻿:root {
+    --headerHeight: 90px;
+    --headerColor: #328cc1;
+    --headerText: #083c5d;
+    --backgroundColour: #dddddd;
+    --textColour: #111;
+}
+ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 h1, h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+ 
 p, table{
     font-size: 1.1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+ 
 body {
     min-height: 200vh;
-    background-color: gray;
+    background-color: var(--backgroundColour);
+    color: var(--textColour);
 }
-
+ 
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: inline;
     justify-content: space-between;
     align-items: center;
+    transition: 0.1s;
     padding: 30px 100px;
     z-index: 1;
-    background-color: #328cc1;
+    background-color: var(--headerColor);
+    height: var(--headerHeight);
 }
-
+ 
 header ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+ 
 header ul li{
     position: relative;
     list-style: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.1em;
 }
-
+ 
 header ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
-    transition: 0.1s;
-    color: #083c5d;
-    background-color: #328cc1;
+    color: var(--headerText);
+    background-color: var(--headerColor);
 }
-
+ 
 div {
     position: relative;
-    padding-top: 90px;
+    padding-top: 100px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 85%;
-    background-color: white;
+    width: 70%;
     margin: auto;
 }
-
+ 
+div h1 {
+    padding-top: calc(var(--headerHeight)); /* Adjust according to the height of your fixed header */
+    margin-top: calc(-1 * var(--headerHeight));
+}
+ 
 input{
     border-radius: 25px;
     border: 0px;
-    background-color: #328cc1;
+    background-color: var(--headerColor);
     padding: 20px;
-    width: 15%;
+    margin: 10px;
+    width: 50%;
     height: 1em;
     color: black;
+}
+ 
+@media screen and (max-width: 1000px) {
+    div {
+        width: 70%;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+    div {
+        width: 85%;
+    }
+}
+ 
+@media screen and (max-width: 500px) {
+    div {
+        width: 100%;
+    }
 }
