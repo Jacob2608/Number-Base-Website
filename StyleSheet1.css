@@ -81,12 +81,13 @@ div h1 {
 }
  
 input{
-    border-radius: 25px;
+    border-radius: 5px;
     border: 0px;
     background-color: var(--headerColor);
     padding: 20px;
-    margin: 10px;
-    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25%;
     height: 1em;
     color: black;
 }
