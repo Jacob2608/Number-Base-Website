@@ -65,7 +65,7 @@ header ul li a{
     color: var(--headerText);
     background-color: var(--headerColor);
 }
- 
+  
 div {
     position: relative;
     padding-top: 100px;
